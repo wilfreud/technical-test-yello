@@ -33,5 +33,9 @@ This project is a REST API built with **NestJS** and **TypeORM**. It allows you 
    pnpm dev
    ```
 
-3. Make your HTTP requests on
+3. Run unit tests by executing
+   ```bash
+       pnpm test
+   ```
+4. Make your HTTP requests on
    `http://localhost:5000/courses`
