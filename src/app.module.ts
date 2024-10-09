@@ -19,7 +19,7 @@ import { Course } from './courses/entitites/courses.entity';
         password: configService.get<string>('DATABASE_PASSWORD'),
         database: configService.get<string>('DATABASE_NAME'),
         entities: [Course],
-        synchronize: configService.get<string>('NODE_ENV') === 'development',
+        // synchronize: true, // remove this in production tho, not good
       }),
       inject: [ConfigService],
     }),

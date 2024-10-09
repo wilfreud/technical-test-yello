@@ -1,5 +1,5 @@
 import { IsString, IsNotEmpty, IsEnum } from 'class-validator';
-import { CourseLevel } from 'src/utils/types/courses.types';
+import { CourseLevel } from '../../utils/types/courses.types';
 
 export class CreateCourseDto {
   @IsString()
@@ -10,6 +10,6 @@ export class CreateCourseDto {
   @IsNotEmpty()
   description: string;
 
-  @IsEnum(CourseLevel)
+  @IsEnum(CourseLevel, { message: 'Invalid course level' })
   level: CourseLevel;
 }

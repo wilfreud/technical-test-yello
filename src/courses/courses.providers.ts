@@ -1,9 +1,6 @@
 import { DataSource } from 'typeorm';
 import { Course } from './entitites/courses.entity';
-import {
-  COURSE_REPOSITORY,
-  DEFAULT_DATASOURCE_NAME,
-} from 'src/utils/constants';
+import { COURSE_REPOSITORY, DEFAULT_DATASOURCE_NAME } from '../utils/constants';
 
 export const CourseProviders = [
   {

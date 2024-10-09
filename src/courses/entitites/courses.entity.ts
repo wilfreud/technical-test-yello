@@ -1,9 +1,9 @@
-import { CourseLevel } from 'src/utils/types/courses.types';
+import { CourseLevel } from '../../utils/types/courses.types';
 import { Entity, Column, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class Course {
-  @PrimaryColumn('int')
+  @PrimaryColumn('int', { generated: true })
   id: number;
 
   @Column({ type: 'text', nullable: false })
