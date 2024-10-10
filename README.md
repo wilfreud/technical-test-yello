@@ -35,7 +35,7 @@ This project is a REST API built with **NestJS** and **TypeORM**. It allows you 
 
 3. Run unit tests by executing
    ```bash
-       pnpm test
+    pnpm test
    ```
 4. Make your HTTP requests on
    `http://localhost:5000/courses`
